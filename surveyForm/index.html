@@ -67,11 +67,25 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
                 <label for="jazz"><input id="jazz" type="radio" name="genre" class="inline" /> Jazz</label>
             </fieldset>
             <fieldset>
-                <label for="play-list">
-                    <input class="inline" id="play-list" type="checkbox" required name="play-list" />
+                <legend>Which artists do you like? </legend>
+                <label for="madonna">
+                    Madonna<input class="inline" id="madonna" type="checkbox" name="madonna" />
+                </label>
+                <label for="michael-jackson">
+                    Michael Jackson<input class="inline" id="michael-jackson" type="checkbox" name="michael-jackson" />
+                </label>
+                <label for="elvis">
+                    Elvis<input class="inline" id="elvis" type="checkbox" name="elvis" />
+                </label>
+                <label for="taylor-swift">
+                    Taylor Swift<input class="inline" id="taylor-swift" type="checkbox" name="taylor-swift" />
+                </label>
+                <label for="elton-john">
+                    Elton John<input class="inline" id="elton-john" type="checkbox" name="elton-john" />
                 </label>
             </fieldset>
-            <input type="submit" value="Submit" />
+            <textarea name="other-artists" id="" cols="30" rows="10" placeholder="Which other artists do you like?"></textarea>
+            <input id="submit" type="submit" value="Submit" />
         </form>
     </body>
 </html>
