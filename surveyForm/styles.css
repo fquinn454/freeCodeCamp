@@ -18,7 +18,7 @@ form {
     padding: 10px;
     border-radius: 5px;
     background-color: hsl(197, 88%, 36%);
-    color: hsla(0, 0%, 0%, 0.9);
+    color:  hsl(207, 69%, 16%);
 }
 
 h1, 
@@ -93,7 +93,7 @@ textarea:hover {
 }
 
 textarea::placeholder {
-    color: hsla(0, 0%, 0%, 1);
+    color:  hsl(207, 69%, 16%);
     font-family: 'Trebuchet MS', sans-serif;
     padding: 10px 0 0 10px ;
     font-size: medium;
