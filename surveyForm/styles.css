@@ -93,7 +93,7 @@ textarea:hover {
 }
 
 textarea::placeholder {
-    color: hsla(0, 0%, 0%, 0.9);
+    color: hsla(0, 0%, 0%, 1);
     font-family: 'Trebuchet MS', sans-serif;
     padding: 10px 0 0 10px ;
     font-size: medium;
