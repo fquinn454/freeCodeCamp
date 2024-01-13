@@ -133,15 +133,18 @@ textarea::placeholder {
     border: solid hsl(207, 61%, 30%) 1px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     fieldset,
     #artists-fieldset {
         flex-direction: column;
     }
 
-    fieldset label,
-    #artists-fieldset label{
+    fieldset label,{
         width: 100%;
+    }
+
+    #artists-fieldset label{
+        width: 20%;
     }
 
     #submit {
