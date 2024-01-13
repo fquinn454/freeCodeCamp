@@ -6,7 +6,6 @@ body{
     background-color: hsl(207, 61%, 30%);
     color:white;
     font-family: 'Trebuchet MS', sans-serif;
-
 }
 
 form {
@@ -108,7 +107,7 @@ textarea::placeholder {
 #artists-fieldset label {
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: 30%;
     margin: 0 10px;
 }
 
