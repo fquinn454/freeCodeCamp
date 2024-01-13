@@ -78,8 +78,7 @@ fieldset:hover {
 }
 
 fieldset label {
-    width: 20%;
-    margin-right: 20px;
+    width: 25%;
 }
 
 textarea {
@@ -107,9 +106,7 @@ textarea::placeholder {
 
 #artists-fieldset label {
     display: flex;
-    justify-content: space-between;
-    width: 18%;
-    margin-right: 40px;
+    justify-content: flex-start;
 }
 
 #submit {
@@ -139,12 +136,9 @@ textarea::placeholder {
         flex-direction: column;
     }
 
-    fieldset label,{
-        width: 100%;
-    }
-
+    fieldset label,
     #artists-fieldset label{
-        width: 20%;
+        width: 100%;
     }
 
     #submit {
