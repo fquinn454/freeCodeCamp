@@ -17,7 +17,7 @@ form {
     border: solid darkgray 2px;
     padding: 10px;
     border-radius: 5px;
-    background-color: hsl(197, 88%, 36%);
+    background-color: rgb(170 206 220 / 89%);
     color:  hsl(207, 69%, 16%);
 }
 
