@@ -7,3 +7,4 @@ Repo for course by [freeCodeCamp](https://www.freecodecamp.org/learn/2022/respon
 5. [Build a Rothko Paining](https://fquinn454.github.io/freeCodeCamp/rothkoPainting/index.html)
 6. [Make a photo gallery](https://fquinn454.github.io/freeCodeCamp/catGallery/index.html)
 7. [Nutritional Info Label](https://fquinn454.github.io/freeCodeCamp/nutritionLabel/index.html)
+8. [Accessibility Quiz](https://fquinn454.github.io/freeCodeCamp/accessibilityQuiz/index.html)
