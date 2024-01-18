@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 800px;
+    max-width: 580px;
     margin: 0 auto;
 }
 
@@ -15,27 +15,45 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     display: block;
 }
 
-#image {
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+#image,
+#bosco-toy {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
 
-figcaption {
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0 10px 0;
+#tribute-info,
+#learn-more,
+#watch-more{
+    width: 100%;
+}
+
+#watch-more {
+    margin: 3% 0 8% 3%;
 }
 
