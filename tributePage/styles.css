@@ -1,6 +1,12 @@
 * {
     font-family: "PT Sans";
     font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -8,16 +14,17 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 img {
     display: block;
-
 }
 
 #image {
@@ -32,6 +39,3 @@ figcaption {
     margin: 20px 0 10px 0;
 }
 
-p {
-    width: 75%;
-}
