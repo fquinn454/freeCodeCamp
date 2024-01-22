@@ -23,7 +23,8 @@ main {
 iframe {
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px #a5a559;
-    max-width: 560px;
+    width: 100%;
+    max-width: 580px;
 }
 
 iframe:hover {
