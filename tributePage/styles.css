@@ -69,6 +69,10 @@ figcaption {
     margin: 20px 0;
 }
 
+main:last-child{
+    margin-top: 5px;
+}
+
 #image,
 #bosco-toy {
     margin: 0 auto;
