@@ -10,6 +10,7 @@ body {
     color: #4d4d44;
     width: 100%;
     max-width: 580px;
+    overflow-y: scroll;
 }
 
 main {
