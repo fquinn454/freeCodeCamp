@@ -11,13 +11,14 @@ body {
     background-color: beige;
     margin: 0 auto;
     color: #4d4d44;
+    width: 100%;
+    max-width: 620px;
 }
 
 main {
     margin: 0 auto;
     padding: 0 20px;
-    width: 100%;
-    max-width: 620px;
+    max-width: 100%;
 }
 
 iframe {
