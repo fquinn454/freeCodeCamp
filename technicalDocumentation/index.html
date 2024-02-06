@@ -45,3 +45,159 @@ Your #navbar should always be on the left edge of the window.
 Your Technical Documentation project should use at least one media query.
 
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Technical Documentation</title>
+    </head>
+    <body>
+        <nav id ="navbar">
+            <header><h1>CSS: The Position Property</h1></header>
+            <div>
+                <a class="nav-link" href="#static">Static</a>
+                <a class="nav-link" href="#relative">Relative</a>
+                <a class="nav-link" href="#fixed">Fixed</a>
+                <a class="nav-link" href="#absolute">Absolute</a>
+                <a class="nav-link" href="#sticky">Sticky</a>
+            </div>
+        </nav>
+        <main id="main-doc">
+            <section id="static" class="main-section">
+                <header><h2>Static</h2></header>
+                <p>All CSS positioning properties</p>
+                <ul>
+                    <li>Position - Specifies the type of positioning for an element</li>
+                    <li>Bottom - Sets the bottom margin edge for a positioned box</li>
+                    <li>Left - Sets the left margin edge for a positioned box</li>
+                    <li>Right - Sets the right margin edge for a positioned box</li>
+                    <li>Top - Sets the top margin edge for a positioned box</li>   
+                </ul>
+                <p>HTML elements are positioned static by default.</p>
+                <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+                <p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+                <div>This element has position: static; </div>
+<pre><code>
+/* CSS for this static div element */
+
+#static div {
+    position: static;
+    border: 3px solid #73AD21;
+    width: 25%;
+}
+</code></pre>
+            </section>
+            <section id="relative" class="main-section">
+                <header><h2>Relative</h2></header>
+                <p>An element with position: relative; is positioned relative to its normal position.
+                </p>
+                <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+                </p>
+
+                <div>This element has position: relative;</div>
+<pre><code>
+/* CSS for this relative div element */
+
+#relative div {
+    position: relative;
+    border: 3px solid #73AD21;
+    left: 30px;
+    width: 25%;
+}
+</code></pre>
+            </section>
+            <section id="fixed" class="main-section">
+                <header><h2>Fixed</h2></header>
+                <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+                </p>
+                <p>
+                A fixed element does not leave a gap in the page where it would normally have been located.
+                </p>
+                <div>This element has position: fixed;</div>
+<pre><code>
+    /* CSS for this fixed div element */
+    
+    #fixed div {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73AD21;
+    }
+</code></pre>
+            </section>
+            <section id="absolute" class="main-section">
+                <header><h2>Absolute</h2></header>
+                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+                <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+                    
+                <P>Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+                <div>This element has position: relative;<div>This element has position: absolute;</div></div>
+<pre><code>
+    /* CSS for this absolute div element */
+    
+    #absolute div {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+    }
+    
+    #absolute div:first-child {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+</code></pre>
+            </section>
+            <section id="sticky" class="main-section">
+                <header><h2>Sticky</h2></header>
+                <p>An element with position: sticky; is positioned based on the user's scroll position.</p>
+
+                    <p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+
+                    <div id="scrollbox">
+                        <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+                        <div>I am sticky!</div>
+
+                        <div style="padding-bottom:2000px">
+                            <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+                            <p>Scroll back up to remove the stickyness.</p>
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                        </div>
+                    </div>
+<pre><code>
+/* CSS for this sticky div element */
+#scrollbox {
+    margin: 2%;
+    width: 75%;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#scrollbox div:first-of-type {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+</code></pre>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

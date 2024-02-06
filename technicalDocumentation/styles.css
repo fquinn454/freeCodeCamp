@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    padding: 1%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+a {
+    font-size: 20px;
+    color: #73AD21;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #58762f
+}
+
+
+#static div {
+    position: static;
+    border: 3px solid #73AD21;
+    width: 25%;
+}
+
+#relative div {
+    position: relative;
+    border: 3px solid #73AD21;
+    left: 30px;
+    width: 25%;
+}
+
+#fixed div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+#absolute div{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+
+#absolute div:first-child {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+#scrollbox {
+    margin: 2%;
+    width: 75%;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#scrollbox div:first-of-type {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+  pre {
+    background-color: black;
+    font-family: monospace;
+    color: #fff;
+    width: 25%;
+    padding: 0 1% 1% 1%;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    body {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+
+    pre {
+      width: 90%;
+    }
+
+    #static div, #relative div{
+        width: 90%;
+    }
+  }
