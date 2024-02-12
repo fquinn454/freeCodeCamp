@@ -90,8 +90,8 @@ a:hover {
     background-color: black;
     font-family: monospace;
     color: #fff;
-    width: 25%;
-    min-width: 300px;
+    width: 30%;
+    min-width: 350px;
     padding: 0 1% 1% 1%;
     border-radius: 10px;
   }
@@ -131,5 +131,13 @@ a:hover {
 
     #static div, #relative div{
         width: 98%;
+    }
+
+    #fixed div {
+        right: 0;
+    }
+
+    footer{
+        margin-bottom: 3%;
     }
   }
